@@ -26,4 +26,5 @@ public class SignUpActivity extends AppCompatActivity {
         etmail2=findViewById(R.id.etmail2);
         btnSave=findViewById(R.id.btnSave);
     }
+
 }

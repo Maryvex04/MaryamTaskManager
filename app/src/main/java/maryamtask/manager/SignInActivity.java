@@ -26,5 +26,6 @@ public class SignInActivity extends AppCompatActivity {
         btnLogIn=findViewById(R.id.btnLogIn);
         btnSignUp=findViewById(R.id.btnSignUp);
 
+
     }
 }
