@@ -11,7 +11,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class HistoryActivity extends AppCompatActivity {
     private SearchView sv;
     private ListView lv;
-    private FloatingActionButton fabtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +18,6 @@ public class HistoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_history);
         sv=findViewById(R.id.sv);
         lv=findViewById(R.id.lv);
-        fabtn=findViewById(R.id.fabtn);
 
     }
 }

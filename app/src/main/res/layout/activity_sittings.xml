@@ -20,7 +20,7 @@
         android:layout_width="91dp"
         android:layout_height="47dp"
         android:text="ToggleButton"
-        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteX="304dp"
         tools:layout_editor_absoluteY="21dp" />
 
     <Button
