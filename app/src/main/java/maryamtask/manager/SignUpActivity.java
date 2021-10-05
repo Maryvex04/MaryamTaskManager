@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import com.google.android.material.textfield.TextInputLayout;
 
+
 public class SignUpActivity extends AppCompatActivity {
     private TextInputLayout etfirstname;
     private TextInputLayout etlastname;

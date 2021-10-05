@@ -8,36 +8,50 @@
 
     <TextView
         android:id="@+id/tv"
-        android:layout_width="158dp"
-        android:layout_height="43dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="16dp"
         android:text="Stay Signed In"
         android:textColor="#070707"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="21dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnsignout"
+        app:layout_constraintEnd_toStartOf="@+id/tbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ToggleButton
         android:id="@+id/tbtn"
-        android:layout_width="91dp"
-        android:layout_height="47dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="3dp"
         android:text="ToggleButton"
-        tools:layout_editor_absoluteX="304dp"
-        tools:layout_editor_absoluteY="21dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnsignout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv" />
 
     <Button
         android:id="@+id/btnsignout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="241dp"
         android:text="Sign Out"
         app:iconTint="#918A8A"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="80dp" />
+        app:layout_constraintBottom_toTopOf="@+id/sch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
 
     <RadioGroup
         android:id="@+id/rg"
-        android:layout_width="395dp"
-        android:layout_height="143dp"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="167dp">
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/sch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsignout">
 
         <RadioButton
             android:id="@+id/rbtn1"
@@ -60,27 +74,36 @@
 
     <Switch
         android:id="@+id/sch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
         android:text="       Keep History"
-        tools:layout_editor_absoluteX="263dp"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsignout" />
 
     <Button
         android:id="@+id/btnch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="252dp"
         android:text="Clear History"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sch" />
 
     <TextView
         android:id="@+id/tvet"
-        android:layout_width="117dp"
-        android:layout_height="32dp"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="2dp"
         android:text="Ended Tasks"
         android:textColor="#0E0E0E"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="133dp" />
+        app:layout_constraintBottom_toTopOf="@+id/rg"
+        app:layout_constraintEnd_toEndOf="@+id/tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsignout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
