@@ -53,8 +53,10 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
             builder.setNegativeButton("No",this);
 
             AlertDialog dialog= builder.create();
-            dialog.show();
 
+            dialog.show();
+            Intent i=new Intent(getApplicationContext(),SignInActivity.class);
+            startActivity(i);
         }
         return true;
     }
